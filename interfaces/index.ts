@@ -8,3 +8,25 @@ export type User = {
   id: number;
   name: string;
 };
+
+export type InterestType = {
+  id: number;
+  title: string;
+  image: string;
+};
+
+export type EducationType = {
+  id: number;
+  degree: string;
+  title: string;
+  gpax: string;
+  period: string;
+};
+
+export type ProjectType = {
+  id: number;
+  title: string;
+  subtitle: string;
+  technologies: string[];
+  image: string[];
+};

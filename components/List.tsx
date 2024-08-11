@@ -7,13 +7,16 @@ type Props = {
 };
 
 const List = ({ items }: Props) => (
-  <ul>
-    {items.map((item) => (
-      <li key={item.id}>
-        <ListItem data={item} />
-      </li>
-    ))}
-  </ul>
+  console.log("list user", items),
+  (
+    <ul>
+      {items.map((item) => (
+        <li key={item.id}>
+          <ListItem data={item} />
+        </li>
+      ))}
+    </ul>
+  )
 );
 
 export default List;
