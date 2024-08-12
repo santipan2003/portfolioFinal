@@ -49,13 +49,18 @@ const ProjectPageCard = () => {
           <Box textAlign="center">
             <Carousel
               showArrows={true}
-              showThumbs={false}
+              renderThumbs={() =>
+                project.image.map((img, index) => (
+                  <img key={index} src={img} alt={`Thumbnail ${index + 1}`} />
+                ))
+              }
               infiniteLoop={true}
               useKeyboardArrows={true}
               autoPlay={true}
               stopOnHover={true}
               dynamicHeight={true}
               showStatus={false}
+              thumbWidth={80} // Customize thumbnail size
             >
               {project.image.map((img, index) => (
                 <div key={index}>

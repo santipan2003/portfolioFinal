@@ -148,7 +148,7 @@ const ForceDirectedTree: React.FC = () => {
     <div
       id="chartdiv"
       ref={chartRef}
-      style={{ width: "100%", height: "500px" }}
+      style={{ width: "100%", height: "100%" }}
     ></div>
   );
 };
