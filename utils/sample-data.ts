@@ -74,7 +74,7 @@ export const ProjectData: ProjectType[] = [
   {
     id: 1,
     title: "Phuket Tourist Attractions",
-    subtitle: "Walailak University , Case Study",
+    subtitle: "Mini project , Back-End Developer",
     technologies: ["Next.js", "Supabase"],
     image: [
       "https://img5.pic.in.th/file/secure-sv1/ph11af44273c97bd446.png",

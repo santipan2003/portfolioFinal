@@ -23,7 +23,7 @@ export const LandingPage: NextPage = () => {
         <Box id="skills" as="section" width="100%">
           <SkillPageCard />
         </Box>
-        <Box id="skills" as="section" width="100%">
+        <Box id="project" as="section" width="100%">
           <ProjectPageCard />
         </Box>
       </Stack>

@@ -17,8 +17,12 @@ const Layout = ({ children, title = "Santipan Sunee | Portfolio" }: Props) => (
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <Navbar />
-    <Box bgColor={useColorModeValue("white", "black")} flex="1">
+    <Box position="fixed" top="0" left="0" width="100%" zIndex="1000">
+      <Navbar />
+    </Box>
+    <Box bgColor={useColorModeValue("white", "black")} flex="1" mt="60px">
+      {" "}
+      {/* Adjust margin-top based on Navbar height */}
       <Box
         as="main"
         maxW="1200px"

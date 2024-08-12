@@ -1,37 +1,57 @@
-import { Box, Flex, Text, VStack, HStack, Link } from "@chakra-ui/react";
+"use client";
 
-const Footer = () => {
+import {
+  Box,
+  Container,
+  SimpleGrid,
+  Stack,
+  Text,
+  Flex,
+  Tag,
+  useColorModeValue,
+  Image,
+} from "@chakra-ui/react";
+import { ReactNode } from "react";
+
+const ListHeader = ({ children }: { children: ReactNode }) => {
   return (
-    <Box as="footer" py={10}>
-      <Flex
-        maxW="1200px"
-        mx="auto"
-        direction={{ base: "column", md: "row" }}
-        justify="space-between"
-        align="center"
-        px={5}
-      >
-        <VStack align="start">
-          <Text fontWeight="bold" fontSize="lg">
-            Santipan Sunee (Palm)
-          </Text>
-          <Text>Computer Engineering and Artificial Intelligence</Text>
-          <Text>Walailak University</Text>
-        </VStack>
-        <HStack spacing={5} mt={{ base: 5, md: 0 }}>
-          <Link href="/" _hover={{ textDecoration: "none" }}>
-            Home
-          </Link>
-          <Link href="/about" _hover={{ textDecoration: "none" }}>
-            About
-          </Link>
-          <Link href="/contact" _hover={{ textDecoration: "none" }}>
-            Contact
-          </Link>
-        </HStack>
-      </Flex>
-    </Box>
+    <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
+      {children}
+    </Text>
   );
 };
 
-export default Footer;
+export default function Footer() {
+  return (
+    <Box bgColor={useColorModeValue("white", "black")}>
+      <Box py={10}>
+        <Flex
+          align={"center"}
+          _before={{
+            content: '""',
+            borderBottom: "1px solid",
+            borderColor: useColorModeValue("gray.200", "gray.700"),
+            flexGrow: 1,
+            mr: 8,
+          }}
+          _after={{
+            content: '""',
+            borderBottom: "1px solid",
+            borderColor: useColorModeValue("gray.200", "gray.700"),
+            flexGrow: 1,
+            ml: 8,
+          }}
+        >
+          <Image
+            src="https://img2.pic.in.th/pic/analytics_921591.png"
+            alt="Logo"
+            boxSize="50px"
+          />
+        </Flex>
+        <Text pt={10} fontSize={"sm"} textAlign={"center"}>
+          © 2024 Santipan Portfolio. All rights reserved
+        </Text>
+      </Box>
+    </Box>
+  );
+}
