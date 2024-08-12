@@ -150,7 +150,6 @@ const Navbar = () => {
             onClick={isOpen ? onClose : onOpen}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label="Toggle navigation"
-            mr={20}
           />
         </Flex>
       </Flex>
