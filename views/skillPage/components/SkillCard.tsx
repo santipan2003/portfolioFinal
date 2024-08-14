@@ -3,7 +3,7 @@ import ForceDirectedTree from "../utills/chart";
 import { motion } from "framer-motion";
 
 const SkillPageCard = () => (
-  <Box maxW="100%" mx="auto" p={[4, 6, 8]}>
+  <Box maxW="100%" mx="auto" p={[4, 6, 8]} overflow="hidden">
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -29,9 +29,15 @@ const SkillPageCard = () => (
       </Box>
     </motion.div>
 
-    <Box height={{ base: "300px", md: "500px" }} width="100%">
-      <ForceDirectedTree />
-    </Box>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 0.4 }}
+    >
+      <Box height={{ base: "500px", md: "500px" }} width="100%">
+        <ForceDirectedTree />
+      </Box>
+    </motion.div>
   </Box>
 );
 

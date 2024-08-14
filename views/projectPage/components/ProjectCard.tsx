@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const ProjectPageCard = () => {
   return (
-    <Box maxW="100%" mx="auto" p={5}>
+    <Box maxW="100%" mx="auto" p={5} overflow="hidden">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ const ProjectPageCard = () => {
           key={project.id}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.6 }}
+          transition={{ duration: 1, delay: 0.4 }}
         >
           <Box key={project.id} mb={6}>
             <SimpleGrid columns={{ base: 1, md: 1 }} spacing={6} mb={12}>
@@ -60,7 +60,7 @@ const ProjectPageCard = () => {
             </SimpleGrid>
 
             {/* Second Row: Image Carousel */}
-            <Box textAlign="center">
+            <Box textAlign="center" overflow="hidden">
               <Carousel
                 showArrows={true}
                 renderThumbs={() =>

@@ -10,11 +10,12 @@ import { EducationData } from "../../../utils/sample-data";
 import { motion } from "framer-motion";
 
 const EducationPageCard = () => (
-  <Box maxW="100%" mx="auto" p={[4, 6, 8]}>
+  <Box maxW="100%" mx="auto" p={[4, 6, 8]} overflow="hidden">
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 0.2 }}
+      style={{ overflow: "hidden" }}
     >
       <Box
         textAlign="center"
@@ -52,6 +53,7 @@ const EducationPageCard = () => (
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
+          style={{ overflow: "hidden" }}
         >
           <SimpleGrid columns={{ base: 1, md: 12 }} spacing={4}>
             <Box gridColumn={{ base: "span 12", md: "span 10" }}>
@@ -79,3 +81,4 @@ const EducationPageCard = () => (
 );
 
 export default EducationPageCard;
+  
