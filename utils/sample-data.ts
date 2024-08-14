@@ -16,10 +16,11 @@ export const InterestData: InterestType[] = [
     title: "Full-Stack Developer",
     image: "https://img2.pic.in.th/pic/developer_4661320.png",
   },
+
   {
     id: 2,
-    title: "Front-End Developer",
-    image: "https://img5.pic.in.th/file/secure-sv1/end_13092224.png",
+    title: "Software Developer",
+    image: "https://img2.pic.in.th/pic/programing_2463510.png",
   },
   {
     id: 3,
@@ -28,8 +29,8 @@ export const InterestData: InterestType[] = [
   },
   {
     id: 4,
-    title: "Software Developer",
-    image: "https://img2.pic.in.th/pic/programing_2463510.png",
+    title: "Front-End Developer",
+    image: "https://img5.pic.in.th/file/secure-sv1/end_13092224.png",
   },
   {
     id: 5,

@@ -60,7 +60,9 @@ const Navbar = () => {
             >
               <Text
                 cursor="pointer"
+                transition="transform 0.2s"
                 _hover={{
+                  transform: "scale(1.2)",
                   textDecoration: "none",
                   color: useColorModeValue("gray.600", "gray.300"),
                 }}
@@ -76,7 +78,9 @@ const Navbar = () => {
             >
               <Text
                 cursor="pointer"
+                transition="transform 0.2s"
                 _hover={{
+                  transform: "scale(1.2)",
                   textDecoration: "none",
                   color: useColorModeValue("gray.600", "gray.300"),
                 }}
@@ -92,7 +96,9 @@ const Navbar = () => {
             >
               <Text
                 cursor="pointer"
+                transition="transform 0.2s"
                 _hover={{
+                  transform: "scale(1.2)",
                   textDecoration: "none",
                   color: useColorModeValue("gray.600", "gray.300"),
                 }}
@@ -108,7 +114,9 @@ const Navbar = () => {
             >
               <Text
                 cursor="pointer"
+                transition="transform 0.2s"
                 _hover={{
+                  transform: "scale(1.2)",
                   textDecoration: "none",
                   color: useColorModeValue("gray.600", "gray.300"),
                 }}
@@ -124,7 +132,9 @@ const Navbar = () => {
             >
               <Text
                 cursor="pointer"
+                transition="transform 0.2s"
                 _hover={{
+                  transform: "scale(1.2)",
                   textDecoration: "none",
                   color: useColorModeValue("gray.600", "gray.300"),
                 }}
@@ -165,7 +175,9 @@ const Navbar = () => {
             >
               <Text
                 cursor="pointer"
+                transition="transform 0.2s"
                 _hover={{
+                  transform: "scale(1.2)",
                   textDecoration: "none",
                   bg: useColorModeValue("gray.200", "gray.600"),
                   rounded: "md",
@@ -184,7 +196,9 @@ const Navbar = () => {
             >
               <Text
                 cursor="pointer"
+                transition="transform 0.2s"
                 _hover={{
+                  transform: "scale(1.2)",
                   textDecoration: "none",
                   bg: useColorModeValue("gray.200", "gray.600"),
                   rounded: "md",
@@ -203,7 +217,9 @@ const Navbar = () => {
             >
               <Text
                 cursor="pointer"
+                transition="transform 0.2s"
                 _hover={{
+                  transform: "scale(1.2)",
                   textDecoration: "none",
                   bg: useColorModeValue("gray.200", "gray.600"),
                   rounded: "md",
@@ -222,7 +238,9 @@ const Navbar = () => {
             >
               <Text
                 cursor="pointer"
+                transition="transform 0.2s"
                 _hover={{
+                  transform: "scale(1.2)",
                   textDecoration: "none",
                   bg: useColorModeValue("gray.200", "gray.600"),
                   rounded: "md",
@@ -241,7 +259,9 @@ const Navbar = () => {
             >
               <Text
                 cursor="pointer"
+                transition="transform 0.2s"
                 _hover={{
+                  transform: "scale(1.2)",
                   textDecoration: "none",
                   bg: useColorModeValue("gray.200", "gray.600"),
                   rounded: "md",
