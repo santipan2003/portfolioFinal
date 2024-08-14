@@ -46,7 +46,7 @@ const ProjectPageCard = () => {
                 <Box display="flex" alignItems="center" mb={2}>
                   {/* Orange circle */}
                   <Box bg="#f35300" borderRadius="full" boxSize="20px" mr={2} />
-                  <Heading as="h2" size="xl">
+                  <Heading as="h2" size={{ base: "md", md: "xl" }}>
                     {project.title}
                   </Heading>
                 </Box>
