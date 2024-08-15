@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Box, Heading, SimpleGrid, Text, Image } from "@chakra-ui/react";
+import { Box, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import { ProjectData } from "../../../utils/sample-data";
@@ -20,12 +20,6 @@ const ProjectPageCard = () => {
           alignItems="center"
           justifyContent="center"
         >
-          <Image
-            src="https://img2.pic.in.th/pic/people_13599094.png"
-            alt="Project Image"
-            boxSize="30px"
-            mr={2}
-          />
           <Heading as="h2" size="lg" mb={0}>
             Project
           </Heading>
@@ -50,41 +44,54 @@ const ProjectPageCard = () => {
                     {project.title}
                   </Heading>
                 </Box>
-                <Text fontSize="md" color="gray.600">
+                <Text
+                  fontSize="md"
+                >
                   {project.subtitle}
                 </Text>
-                <Text fontSize="md" color="gray.600">
+                <Text
+                  fontSize="md"
+                >
                   Stack: {project.technologies.join(", ")}
                 </Text>
               </Box>
             </SimpleGrid>
 
-            {/* Second Row: Image Carousel */}
+            {/* Second Row: Video Carousel */}
             <Box textAlign="center" overflow="hidden">
               <Carousel
                 showArrows={true}
                 renderThumbs={() =>
-                  project.image.map((img, index) => (
-                    <img key={index} src={img} alt={`Thumbnail ${index + 1}`} />
+                  project.video.map((video, index) => (
+                    <video
+                      key={index}
+                      src={video}
+                      style={{ width: "80px", height: "auto" }}
+                      muted
+                    />
                   ))
                 }
                 infiniteLoop={true}
                 useKeyboardArrows={true}
-                autoPlay={true}
+                autoPlay={false}
                 stopOnHover={true}
                 dynamicHeight={true}
                 showStatus={false}
                 thumbWidth={80} // Customize thumbnail size
               >
-                {project.image.map((img, index) => (
+                {project.video.map((video, index) => (
                   <div key={index}>
-                    <Image
-                      src={img}
-                      alt={`Project Image ${index + 1}`}
-                      objectFit="cover"
-                      borderRadius={10}
-                      width="100%"
-                      height="auto"
+                    <video
+                      src={video}
+                      controls
+                      autoPlay
+                      muted
+                      loop
+                      style={{
+                        width: "100%",
+                        height: "auto",
+                        borderRadius: "10px",
+                      }}
                     />
                   </div>
                 ))}

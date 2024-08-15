@@ -28,5 +28,5 @@ export type ProjectType = {
   title: string;
   subtitle: string;
   technologies: string[];
-  image: string[];
+  video: string[];
 };
